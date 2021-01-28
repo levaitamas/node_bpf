@@ -21,7 +21,9 @@
 
 #include <features.h>
 
-__BEGIN_DECLS
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* Standard ELF types.  */
 
@@ -4103,6 +4105,8 @@ enum
 #define R_ARC_TLS_LE_S9		0x4a
 #define R_ARC_TLS_LE_32		0x4b
 
-__END_DECLS
+#ifdef __cplusplus
+}
+#endif
 
 #endif	/* elf.h */
